@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Simple</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Capf.png"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="container_box">
+    <div class="container">
+        <div class="menu">
+        <div class="Logo">Coffee
+            <span>Simple</span>
+        </div>
+        <ul>
+            <li onclick="Reload()"><i class="fa-solid fa-house"></i>Trang Chủ</li>
+            <li><i class="fa-sharp fa-solid fa-user"></i>Tài Khoản</li>
+            <li><i class="fa-solid fa-address-book"></i>Liên Hệ</li>
+        </ul>
+        <ul>
+        <a href="https://www.tiktok.com/@z.z.z.z.zz.zz" target="_blank">
+            <li><i class="fa-brands fa-tiktok"></i>TikTok</li>
+        </a>
+        <a href="https://www.facebook.com/ducpham.66" target="_blank">
+            <li><i class="fa-brands fa-facebook-f"></i>Facebook</li>
+        </a>
+            <a href="https://github.com/Ducpham176" target="_blank">
+            <li><i class="fa-brands fa-github-alt"></i>Github</li>
+        </a>
+        </ul>
+        </div>
+
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <input type="search" placeholder="Tìm Kiếm...">
+                    <button class="search-submit">Tìm Kiếm</button>
+                </div>
+            </div>
+            <h2 class="product_h2">Sản Phẩm</h2>
+            <div class="list">
+            
+                <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="https://jollibee.com.vn/uploads/dish/0529ce59a0c42b-4005332.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Nước Ngọt Có Ga</div>
+                        <div class="des">Lorem rat incidunt laboriosam quas.</div>
+                        <div class="price">14.000 VNĐ</div>
+                        <input type="number" class="count" min="1" max="100">
+                        <button class="add">Thêm Sản Phẩm</button>
+                        <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash"></i></button>
+                    </div> 
+                </div>
+
+                <div class="item" data-key="2">
+                    <div class="img">
+                        <img src="https://aeonmall-binhduongcanary.com.vn/wp-content/uploads/2020/05/cfd.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Cà Phê</div>
+                        <div class="des">Lorem rat incidunt laboriosam quas.</div>
+                        <div class="price">16.000 VNĐ</div>
+                        <input type="number" class="count" min="1" max="100">
+                        <button class="add">Thêm Sản Phẩm</button>
+                        <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash"></i></button>
+                    </div> 
+                </div>
+
+                <div class="item" data-key="3">
+                    <div class="img">
+                        <img src="https://free.vector6.com/wp-content/uploads/2021/03/freepng1198-tra-sua-nuoc-giai-khat-do-uong-png-hinh-tach-nen-21.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Trà Sữa</div>
+                        <div class="des">Lorem rat incidunt laboriosam quas.</div>
+                        <div class="price">15.000 VNĐ</div>
+                        <input type="number" class="count" min="1" max="100">
+                        <button class="add">Thêm Sản Phẩm</button>
+                        <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash"></i></button>
+                    </div> 
+                </div>
+
+                <div class="item" data-key="4">
+                    <div class="img">
+                        <img src="https://product.hstatic.net/200000388411/product/f53-nuocep-duahau_af85200ab58f43d9adf7cd2e63e3bb81_1024x1024.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Nước Dưa Hấu</div>
+                        <div class="des">Lorem rat incidunt laboriosam quas.</div>
+                        <div class="price">20.000 VNĐ</div>
+                        <input type="number" class="count" min="1" max="100">
+                        <button class="add">Thêm Sản Phẩm</button>
+                        <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash"></i></button>
+                    </div> 
+                </div>
+
+                <div class="item" data-key="5">
+                    <div class="img">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/weblink/BrandFresh/Product/Products6.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Cà Phê Sữa Đá</div>
+                        <div class="des">Lorem rat incidunt laboriosam quas.</div>
+                        <div class="price">18.000 VNĐ</div>
+                        <input type="number" class="count" min="1" max="100">
+                        <button class="add">Thêm Sản Phẩm</button>
+                        <button class="remove" onclick="Remove(5)"><i class="fa-solid fa-trash"></i></button>
+                    </div> 
+                </div>
+
+                <div class="item" data-key="6">
+                    <div class="img">
+                        <img src="http://nowcoffeeandtea.vn/userfile/products/2019_09_27_14_47_10_68.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Trà Tắc</div>
+                        <div class="des">Lorem rat incidunt laboriosam quas.</div>
+                        <div class="price">15.000 VNĐ</div>
+                        <input type="number" class="count" min="1" max="100">
+                        <button class="add">Thêm Sản Phẩm</button>
+                        <button class="remove" onclick="Remove(6)"><i class="fa-solid fa-trash"></i></button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="name">Giỏ Hàng</div>
+            <div class="listCart"></div>
+            <button class="oder"><i class="fa-solid fa-cart-shopping"></i>Đặt Hàng</button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
